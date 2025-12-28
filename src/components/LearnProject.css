@@ -1,0 +1,120 @@
+.container {
+  max-width: 100%;
+  width: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1em;
+  transition: 0.5s all;
+}
+h2 {
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-family: komika axis;
+  letter-spacing: 7px;
+  color: #fff;
+  text-shadow: 4px 4px 0 #000;
+}
+.game {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+/* .questionInput {
+  margin-top: 1em;
+} */
+input {
+  color: #000;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px 2px #fff inset, 0 0 3px #fff;
+  border: 1px solid #777;
+  text-shadow: 3px 3px #000;
+}
+input:hover {
+  cursor: grab;
+}
+.btnRow {
+  width: 100%;
+}
+.nextBtn, .resetBtn {
+  color: #fff;
+  background: blue;
+  font-weight: 500;
+  width: 100%;
+  height: fit-content;
+  padding: 3% 0;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 10px #000 inset;
+  text-shadow: 3px 3px 0 #000;
+}
+.nextBtn:focus {
+  background: hsl(240, 100%, 60%);
+}
+
+@media (max-width: 560px) {
+  h2 {
+    font-size: 2em;
+  }
+  .container {
+    width: 26em;
+  }
+}
+@media (max-width: 435px) {
+  h2 {
+    font-size: 1.2em;
+  }
+  .container {
+    width: 19em;
+  }
+}
+@media (max-width: 328px) {
+  h2 {
+    font-size: 0.8em;
+  }
+  .container {
+    width: 15em;
+  }
+  input {
+    height: 2em;
+  }
+}
+
+.timer {
+  color: #fd0;
+  text-shadow: 2px 2px 0 #000;
+}
+.scoreCont {
+  font-size: 20px;
+  font-family: komika boo;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+input:focus {
+  border: unset;
+}
